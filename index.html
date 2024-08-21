@@ -5,41 +5,56 @@
 
         <!-- Meta tags. -->
         <meta charset="UTF-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="description" content="This is a cafe.There is so many coffee available.">
+        <meta name="keywords" content="cafe, coffee, tea, tea stall, tea house">
+        <meta name="author" content="Tea House">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Page title. -->
-        <title></title>
+        <title>Tea House</title>
 
         <!-- Page icon. -->
-        <link rel="shortcut icon" href="media/images" type="image/x-icon">
+        <link rel="shortcut icon" href="media/images/circles.png" type="image/x-icon">
 
         <!-- Tailwind CSS cdn. -->
         <script src="https://cdn.tailwindcss.com"></script>
 
+        <!-- Tailwind customized configuration. -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                            white: '#fff',
+                            black: '#000',
+                            common_heading: 'rgb(28, 28, 28)',
+                            common_p: 'rgb(119, 119, 119)',
+                            common_btn_bg_1: 'rgb(255, 0, 0)',
+                            common_btn_bg_2: 'rgb(255, 137, 56)',
+                            star: 'rgb(255, 200, 80)',
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <!-- Google fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
         <!-- Internal main CSS. -->
         <style>
-            /* Google fonts. */
-
-            /* Custom color. */
-            :root {
-                --white: #fff;
-                --black: #000;
-                --common_heading_color: ;
-            }
-
             body {
-                background-color: var(--white);
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Manrope", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
         </style>
 
     </head>
 
-    <body>
+    <body class="bg-white">
 
 
         <!-- 
@@ -61,7 +76,51 @@
                                                     Main.
             ===================================================================================
         -->
-        <main></main>
+        <main>
+
+            <!-- 
+                                        It's good section.
+                =====================================================================
+            -->
+            <section class="py-10 lg:py-20">
+                
+                <div class="w-11/12 lg:w-4/5 mx-auto">
+
+                    <div class="flex justify-between gap-8">
+                        <div>
+                            <h1 class="font-extrabold text-6xl text-common_heading leading-tight mb-10">
+                                It's good <br>
+                                tea time at The Tea House
+                            </h1>
+                            <p class="font-medium text-lg leading-7 text-common_p">
+                                Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.
+                            </p>
+                            <button class="bg-gradient-to-r from-common_btn_bg_2 to-common_btn_bg_1 p-5 rounded-xl mt-8 text-white text-xl font-bold">
+                                <a href="#">Explore More 
+                                    <i class="fa-solid fa-arrow-right -rotate-45 text-2xl"></i>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="relative">
+                            <img src="media/images/banner.png" alt="Tea house banner image" title="Tea house banner image">
+                        
+                            <div class="flex justify-between absolute bottom-2 left-8 bg-white items-center gap-3 text-5xl shadow-md py-5 px-7 rounded-xl">
+                                <div class="text-star">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div>
+                                    <b class="text-common_heading text-3xl font-extrabold">5.00</b>
+                                    <p class="text-base font-semibold text-common_p mt-1">Trust Pilot Ratings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
 
 
 
