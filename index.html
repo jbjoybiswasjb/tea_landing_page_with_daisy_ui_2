@@ -21,7 +21,7 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Google fonts. -->
+        <!-- Google fonts. Manrope font. -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -71,7 +71,7 @@
 
                         // Font family.
                         fontFamily: {
-                            manrope : ['Manrope', 'sans-serif', 'system-ui'],
+                            manrope: ['Manrope', 'sans-serif', 'system-ui'],
                         }
                     }
                 }
@@ -512,21 +512,42 @@
                         <a class="link link-hover text-base font-normal">FAQs</a>
                         <a class="link link-hover text-base font-normal">Contact Us</a>
                     </nav>
-                    <form class="gap-4">
-                        <h6
-                            class="font-semibold text-xl text-common_heading mb-0 lg:mb-1 text-center lg:text-left w-full lg:w-2/3">
-                            Subscribe to our newsletter</h6>
-                        <fieldset class="form-control">
-                            <div class="join">
-                                <input type="text" placeholder="Email address"
-                                    class="input input-bordered join-item bg-transparent border-t-0 border-l-0 border-r-0 rounded-none border-b-1 border-footer_text text-footer_text" />
-                                <button
-                                    class="rounded-full w-8 min-h-8 h-8 p-5 text-base bg-gradient-to-r from-common_btn_bg_2 to-common_btn_bg_1 text-white flex justify-center items-center font-thin">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    <div>
+                        <form class="gap-4">
+                            <h6
+                                class="font-semibold text-xl text-common_heading mb-0 lg:mb-1 text-center lg:text-left w-full lg:w-2/3">
+                                Subscribe to our newsletter</h6>
+                            <fieldset class="form-control">
+                                <div class="join">
+                                    <input type="text" placeholder="Email address"
+                                        class="input input-bordered join-item bg-transparent border-t-0 border-l-0 border-r-0 rounded-none border-b-1 border-footer_text text-footer_text" />
+                                    <button
+                                        class="rounded-full w-8 min-h-8 h-8 p-5 text-base bg-gradient-to-r from-common_btn_bg_2 to-common_btn_bg_1 text-white flex justify-center items-center font-thin">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="flex justify-center w-full lg:w-auto">
+                            <ul class="flex gap-7 text-3xl mt-12 ml-4">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </div>
 
